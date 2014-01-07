@@ -1,0 +1,288 @@
+body {
+  /*background-image:url('img/bg.png');*/
+  /*background-color: #cccccc;*/
+
+}
+
+@font-face {
+  font-family: honey;
+  src: url('../fonts/HoneyScript-SemiBold.ttf'); /* Edit this line */
+}
+
+h1 {
+  color: blue;
+}
+
+.me {
+  border-radius: 18em;
+  width: 35em;
+  height: 35em;
+  background: url('../img/me.jpg') no-repeat;
+  background-color: red;
+  margin-left: 34em;
+  margin-top: 6em;
+  background-size: cover;
+}
+
+#navbar-text {
+  text-decoration: none;
+}
+
+a {
+  color: #FF8322;
+}
+#contact a {
+  font-size: 18px;
+}
+
+#navbar-default {
+  background-color: white;
+}
+
+.mainp {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+  width: 25em;
+  margin-top: -11em;
+}
+
+.navbar {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+
+.navbar-header {
+  margin-left: 42em;
+}
+
+.container {
+  margin-left: 30em;
+  margin-top: 24em;
+  margin-right: 15em;
+}
+
+#workheader {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
+
+
+
+#seperator {
+  margin-left: .1em;
+  width: 12em;
+}
+
+hr#workhr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+  text-align: center;
+  margin-right: 4em;
+  margin-left: 4em;
+  font-family: 'honey';
+}
+
+hr#workhr:after {
+  content: 'WORK';
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.2em;
+  padding: 0 0.25em;
+  background: white;
+  font-family: 'honey';
+}
+
+hr#contacthr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+  text-align: center;
+  margin-right: 4em;
+  margin-left: 4em;
+}
+
+hr#contacthr:after {
+  content: 'CONTACT';
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+#carousel a img {
+  border-radius: 1em;
+  width: 70em;
+  height: 40em;
+  margin-left: 2em;
+  text-decoration: none;
+}
+
+#window {
+  position: relative;
+  width: 74em;
+  height: 40em;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 2em;
+  /*margin-right: 12em;*/
+}
+
+#carousel {
+  position: absolute;
+  display: inline-block;
+  width: 280em;
+  height: 100%;
+}
+
+#carousel img {
+  float: left;
+}
+
+.carousel-direction {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  /*color: #ffffff;*/
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: center;
+  /*background: #222222;*/
+  /*border: 3px solid #ffffff;*/
+  opacity: 0.5;
+  border-radius: 23px;
+  z-index: 5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#next {
+  right: -.2em;
+  left: auto;
+}
+
+#previous {
+  right: auto;
+  left: -0.2em;
+}
+
+#contact{
+  margin-left: 45em;
+}
+
+.fadeIn{
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pullDown{
+  animation-name: pullDown;
+  -webkit-animation-name: pullDown;
+
+  animation-duration: 1.1s;
+  -webkit-animation-duration: 1.1s;
+
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+
+  transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+}
+
+@keyframes pullDown {
+  0% {
+    transform: scaleY(0.1);
+  }
+  40% {
+    transform: scaleY(1.02);
+  }
+  60% {
+    transform: scaleY(0.98);
+  }
+  80% {
+    transform: scaleY(1.01);
+  }
+  100% {
+    transform: scaleY(0.98);
+  }
+  80% {
+    transform: scaleY(1.01);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes pullDown {
+  0% {
+    -webkit-transform: scaleY(0.1);
+  }
+  40% {
+    -webkit-transform: scaleY(1.02);
+  }
+  60% {
+    -webkit-transform: scaleY(0.98);
+  }
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+  100% {
+    -webkit-transform: scaleY(0.98);
+  }
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
